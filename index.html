@@ -107,29 +107,39 @@
             </div>
         </div>
         <div class="contact black">
-            <div class="contact-informations">
+            <div class="contact__form">
+                <h2>Napisz opinię</h2>
+                <form action="">
+                    <div class="contact__form-box contact__form-name">
+                        <label for="name">Imię i nazwisko</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="contact__form-box contact__form-opinion">
+                        <label for="opinion">Opinia</label>
+                        <textarea name="opinion" id="opinion" cols="30" rows="10" required></textarea>
+                    </div>
+                    <button type="submit">Wyślij</button>
+                </form>
+            </div>
+            <div class="contact__informations">
                 <h2>Skontaktuj się ze mną</h2>
-                <div class="contact-informations-information">
-                    <p>Telefon</p>
+                <div class="contact__informations-information">
+                    <h3>Telefon</h3>
                     <p>XXX-XXX-XXX</p>
                     <a href="">Zadzwoń do mnie</a>
                 </div>
-                <div class="contact-informations-information">
-                    <p>E-mail</p>
+                <div class="contact__informations-information">
+                    <h3>E-mail</h3>
                     <p>email@example.pl</p>
                     <a href="">Napisz do mnie</a>
                 </div>
             </div>
-            <div class="contact-form">
-                <h2>Współpracowaliśmy? Napisz opinię</h2>
-                <form action="">
-                    <input type="text" name="" id="" required>
-                    <textarea name="" id="" cols="30" rows="10" required></textarea>
-                    <button type="submit">Wyślij</button>
-                </form>
-            </div>
         </div>
+
+        <div class="footer"></div>
     </div>
+
+
     <script src="assets/js/script.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
     <script>
