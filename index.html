@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mówca pogrzebowy | Tomasz Tomkowicz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+</head>
+
+<body>
+    <div class="body__container">
+        <div class="banner black">
+            <div class="banner-txt">
+                <h1>Tomasz Tomkowicz</h1>
+                <h2>mówca pogrzebowy</h2>
+            </div>
+
+        </div>
+        <div class="wrapper white">
+            <div class="about">
+                <div class="about-description">
+                    <h2>O mnie</h2>
+                    <p>Na codzień jestem Pastorem. Oprócz wielu różnych odpowiedzialności duchownego, prowadzę zarówno
+                        uroczystości pogrzebowe, jak&nbsp;i zaślubin oraz różne inne uroczystości okolicznościowe.
+                        Posiadam
+                        15
+                        letnie doświadczenie.</p>
+                </div>
+                <div class="about-img">
+                    <img src="assets/img/IMG_7083.jpg" alt="a photo of a preacher">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="photo__gallery black">
+            <h2>Zobacz jak pracuję</h2>
+            <div class="photo__gallery-photos">
+                <img src="assets/img/funeral.jpg" alt="">
+                <img src="assets/img/funeral.jpg" alt="">
+                <img src="assets/img/funeral.jpg" alt="">
+                <img src="assets/img/funeral.jpg" alt="">
+                <img src="assets/img/funeral.jpg" alt="">
+                <img src="assets/img/funeral.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="wrapper white">
+            <div class="offer">
+                <div class="offer-img">
+                    <img src="assets/img/IMG_7067.jpg" alt="a photo of a preacher">
+                </div>
+                <div class="offer-description">
+                    <h2>Oferta</h2>
+                    <p>Pragnę zaoferować prowadzenie uroczystości pogrzebowej zarówno o charakterze świeckim, jak
+                        również
+                        chrześcijańskim w zależności od Państwa potrzeb oraz życzenia osoby zmarłej.
+                        <br>Oferuje swoje usługi w Krakowie istnieje także możliwość poprowadzenia pogrzebu na terenie
+                        województwa Małopolskiego, po wcześniejszym umówieniu się. </p>
+                    <ul>
+                        <li>W zakres usługi wchodzi mowa pogrzebowa w Kaplicy oraz druga mowa nad grobem. Szczegóły za
+                            każdym razem ustalane są indywidualnie w zależności od potrzeb.</li>
+                        <li>Dodatkowo istnieje możliwość zamówienia fotografa.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="references black">
+            <h2>Opinie</h2>
+            <div class="reference__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="reference__card swiper-slide">
+                        <h3 class="reference__name">Imię Nazwisko</h3>
+                        <p class="reference__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Optio, veritatis. Nesciunt fuga, enim iure illo adipisci suscipit ipsa vel voluptas?</p>
+                    </div>
+
+                    <div class="reference__card swiper-slide">
+                        <h3 class="reference__name">Imię Nazwisko</h3>
+                        <p class="reference__description">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Quod nam cupiditate eos quasi molestias assumenda ab vitae velit deleniti deserunt?</p>
+                    </div>
+
+                    <div class="reference__card swiper-slide">
+                        <h3 class="reference__name">Imię Nazwisko</h3>
+                        <p class="reference__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam
+                            dignissimos cumque odit ipsum, sunt unde itaque harum. Ratione sed accusantium, nobis
+                            perferendis quibusdam laboriosam, tempora esse dolore ipsa aspernatur nesciunt?
+                        </p>
+                    </div>
+
+                    <div class="reference__card swiper-slide">
+                        <h3 class="reference__name">Imię Nazwisko</h3>
+                        <p class="reference__description">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Illum quod laboriosam rem in sapiente a esse, aliquam temporibus ex officia.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="contact black">
+            <div class="contact-informations">
+                <h2>Skontaktuj się ze mną</h2>
+                <div class="contact-informations-information">
+                    <p>Telefon</p>
+                    <p>XXX-XXX-XXX</p>
+                    <a href="">Zadzwoń do mnie</a>
+                </div>
+                <div class="contact-informations-information">
+                    <p>E-mail</p>
+                    <p>email@example.pl</p>
+                    <a href="">Napisz do mnie</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Współpracowaliśmy? Napisz opinię</h2>
+                <form action="">
+                    <input type="text" name="" id="" required>
+                    <textarea name="" id="" cols="30" rows="10" required></textarea>
+                    <button type="submit">Wyślij</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script>
+        let swiperreference = new Swiper(".reference__container", {
+            spaceBetween: 24,
+            loop: true,
+            grabCursor: true,
+            autoplay: {
+                disableOnInteraction: false,
+            },
+            speed: 2000,
+
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 48,
+                },
+                1400: {
+                    slidesPerView: 3,
+                    spaceBetween: 52,
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>
