@@ -17,10 +17,10 @@
                 <h1>Tomasz Tomkowicz</h1>
                 <h2>mówca pogrzebowy</h2>
             </div>
-
         </div>
+
         <div class="wrapper white">
-            <div class="about">
+            <div class="about" id="about">
                 <div class="about-description">
                     <h2>O mnie</h2>
                     <p>Na codzień jestem Pastorem. Oprócz wielu różnych odpowiedzialności duchownego, prowadzę zarówno
@@ -36,7 +36,7 @@
         </div>
 
 
-        <div class="photo__gallery black">
+        <div class="photo__gallery black" id="gallery">
             <h2>Zobacz jak pracuję</h2>
             <div class="photo__gallery-photos">
                 <img src="assets/img/funeral.jpg" alt="">
@@ -49,7 +49,7 @@
 
         </div>
 
-        <div class="wrapper white">
+        <div class="wrapper white" id="offer">
             <div class="offer">
                 <div class="offer-img">
                     <img src="assets/img/IMG_7067.jpg" alt="a photo of a preacher">
@@ -70,8 +70,7 @@
             </div>
         </div>
 
-
-        <div class="references black">
+        <div class="references black" id="opinions">
             <h2>Opinie</h2>
             <div class="reference__container container swiper">
                 <div class="swiper-wrapper">
@@ -106,7 +105,17 @@
                 <div class="swiper-pagination"></div>
             </div>
         </div>
-        <div class="contact black">
+
+        <div class="quote black">
+            <div class="quote-txt">
+                <h4>Król Salomon</h4>
+                <h3>"Podobnie, jak jest pora sadzenia, a po niej pora zbirów, tak jest czas narodzin i czas
+                    śmierci.<br>Na
+                    wszystko jest odpowiednia pora i wszystko ma swój czas."</h3>
+            </div>
+        </div>
+
+        <div class="contact black" id="contact">
             <div class="contact__form">
                 <h2>Napisz opinię</h2>
                 <form action="">
@@ -116,7 +125,7 @@
                     </div>
                     <div class="contact__form-box contact__form-opinion">
                         <label for="opinion">Opinia</label>
-                        <textarea name="opinion" id="opinion" cols="30" rows="10" required></textarea>
+                        <textarea name="opinion" id="opinion" cols="30" rows="7" required maxlength="200"></textarea>
                     </div>
                     <button type="submit">Wyślij</button>
                 </form>
@@ -125,8 +134,8 @@
                 <h2>Skontaktuj się ze mną</h2>
                 <div class="contact__informations-information">
                     <h3>Telefon</h3>
-                    <p>XXX-XXX-XXX</p>
-                    <a href="">Zadzwoń do mnie</a>
+                    <p>(+48) 602-300-270</p>
+                    <a href="tel:602300270">Zadzwoń do mnie</a>
                 </div>
                 <div class="contact__informations-information">
                     <h3>E-mail</h3>
@@ -136,7 +145,13 @@
             </div>
         </div>
 
-        <div class="footer"></div>
+        <div class="footer">
+            <a href="#about">O mnie</a>
+            <a href="#gallery">Galeria</a>
+            <a href="#offer">Oferta</a>
+            <a href="#opinions">Opinie</a>
+            <a href="#contact">Kontakt</a>
+        </div>
     </div>
 
 

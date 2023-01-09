@@ -6,13 +6,19 @@
     --black__color2: rgb(50, 50, 50);
     --white__color: rgba(250, 250, 255, 1);
     --transition: 0.4s ease-in-out;
-    font-family: 'Merriweather', serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Merriweather',
+        serif;
     /* border: 1px solid pink; */
 }
 
@@ -78,7 +84,10 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     flex-direction: column;
     background-color: rgba(19, 19, 19, 0.7);
+    text-align: center;
+    padding: 0 5rem;
 }
+
 
 .banner-txt h1 {
     font-size: 4rem;
@@ -95,7 +104,7 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: repeat(2, 1fr);
     width: 50%;
     gap: 3rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .about-img img {
@@ -127,7 +136,7 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     text-align: center;
     gap: 3rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .photo__gallery-photos {
@@ -152,7 +161,7 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 1fr 1fr;
     width: 55%;
     gap: 3rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .offer-img img {
@@ -183,7 +192,7 @@ body::-webkit-scrollbar-thumb {
 
 .references {
     width: 80%;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .references h2 {
@@ -232,6 +241,42 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--white__color) !important;
 }
 
+/* QUOTE  */
+
+.quote {
+    width: 100%;
+    background-image: url('/assets/img/banner.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote-txt {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(19, 19, 19, 0.9);
+    /* text-align: center; */
+    padding: 5rem 5rem;
+    gap: 2rem;
+}
+
+.quote-txt h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.quote-txt h4 {
+    width: 85%;
+    font-size: 1.25rem;
+    text-align: right;
+    font-style: italic;
+}
+
 /* CONTACT */
 
 .contact {
@@ -239,6 +284,7 @@ body::-webkit-scrollbar-thumb {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    padding: 3rem 0;
 }
 
 .contact__informations,
@@ -254,14 +300,39 @@ body::-webkit-scrollbar-thumb {
 .contact__form form {
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     flex-direction: column;
     gap: 2rem;
+    width: 80%;
 }
 
 .contact__form-box {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
+}
+
+.contact__form-box label {
+    font-weight: 600;
+}
+
+.contact__form-box input[type=text],
+.contact__form-box textarea {
+    outline: none;
+    width: 100%;
+    resize: none;
+    border: 1px solid var(--white__color);
+    background-color: var(--black__color);
+    padding: 0.75rem 1rem;
+    color: var(--white__color);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.contact__form-box input[type=text]:focus,
+.contact__form-box textarea:focus {
+    background-color: var(--black__color2);
 }
 
 .contact__informations-information {
@@ -294,8 +365,50 @@ body::-webkit-scrollbar-thumb {
     opacity: 0.75;
 }
 
+.contact__form form button {
+    width: min-content;
+    display: flex;
+    outline: none;
+    border: 1px solid var(--white__color);
+    background-color: var(--black__color);
+    color: var(--white__color);
+    padding: 0.75rem 3rem;
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 600;
+}
+
+.contact__form form button:hover {
+    background-color: var(--black__color2);
+}
+
+
+
 /* FOOTER */
 .footer {
     width: 100%;
-    min-height: 50vh;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3rem;
+    position: sticky;
+    bottom: 0;
+    background-color: var(--black__color);
+    z-index: 999;
+    transition: var(--transition);
+}
+
+.scrolled {
+    -webkit-box-shadow: 0px 0px 10px -7px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 10px -7px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px -7px rgba(255, 255, 255, 1);
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--white__color);
+    font-weight: 600;
+
 }
