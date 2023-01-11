@@ -1,3 +1,4 @@
+// MAIN APP
 function scrollFooter() {
     const footer = document.querySelector('.footer'),
         bodyContainer = document.querySelector('.body__container');
@@ -8,3 +9,40 @@ function scrollFooter() {
 }
 
 window.addEventListener('scroll', scrollFooter)
+
+// VENO LOGHTBOX 
+new VenoBox({
+    selector: ".photo-gallery",
+    spinner: "flow"
+});
+
+// SWIPER
+
+let swiperreference = new Swiper(".reference__container", {
+    spaceBetween: 24,
+    loop: true,
+    grabCursor: true,
+    // autoplay: {
+    //     disableOnInteraction: false,
+    // },
+    speed: 2000,
+
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+        },
+        1400: {
+            slidesPerView: 3,
+            spaceBetween: 52,
+        },
+    }
+});
