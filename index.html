@@ -8,6 +8,7 @@
     <title>Mówca pogrzebowy | Tomasz Tomkowicz</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/venobox.min.css">
 </head>
 
 <body>
@@ -39,12 +40,18 @@
         <div class="photo__gallery black" id="gallery">
             <h2>Zobacz jak pracuję</h2>
             <div class="photo__gallery-photos">
-                <img src="assets/img/funeral.jpg" alt="">
-                <img src="assets/img/funeral.jpg" alt="">
-                <img src="assets/img/funeral.jpg" alt="">
-                <img src="assets/img/funeral.jpg" alt="">
-                <img src="assets/img/funeral.jpg" alt="">
-                <img src="assets/img/funeral.jpg" alt="">
+                <a href="assets/img/funeral.jpg" data-gall="myGallery" class="photo-gallery"><img
+                        src="assets/img/funeral.jpg" alt="a photo"></a>
+                <a href="assets/img/funeral1.jpg" data-gall="myGallery" class="photo-gallery"><img
+                        src="assets/img/funeral1.jpg" alt="a photo"></a>
+                <a href="assets/img/funeral2.jpg" data-gall="myGallery" class="photo-gallery"><img
+                        src="assets/img/funeral2.jpg" alt="a photo"></a>
+                <a href="assets/img/funeral3.jpg" data-gall="myGallery" class="photo-gallery"><img
+                        src="assets/img/funeral3.jpg" alt="a photo"></a>
+                <a href="assets/img/funeral4.jpg" data-gall="myGallery" class="photo-gallery"><img
+                        src="assets/img/funeral4.jpg" alt="a photo"></a>
+                <a href="assets/img/funeral5.jpg" data-gall="myGallery" class="photo-gallery"><img
+                        src="assets/img/funeral5.jpg" alt="a photo"></a>
             </div>
 
         </div>
@@ -157,14 +164,21 @@
 
     <script src="assets/js/script.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/venobox.min.js"></script>
+    <script>
+        new VenoBox({
+            selector: ".photo-gallery",
+            spinner: "flow"
+        });
+    </script>
     <script>
         let swiperreference = new Swiper(".reference__container", {
             spaceBetween: 24,
             loop: true,
             grabCursor: true,
-            autoplay: {
-                disableOnInteraction: false,
-            },
+            // autoplay: {
+            //     disableOnInteraction: false,
+            // },
             speed: 2000,
 
 
